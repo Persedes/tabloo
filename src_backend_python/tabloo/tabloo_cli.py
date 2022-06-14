@@ -59,7 +59,7 @@ def load_file(args):
         df = FILE_LOADERS[extension](args)
         return df
     except (KeyError):
-        raise NotImplementedError("File extension {extension} currently not supported")
+        raise NotImplementedError(f"File extension {extension} currently not supported")
 
 
 
